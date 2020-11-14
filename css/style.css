@@ -1,17 +1,76 @@
+/* ======= global css ======= */
 html {
     box-sizing: border-box;
-    }
-    *,
-    *::before,
-    *::after {
+}
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
-    }
-    
-    a {
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+}
+
+/* font-family: Raleway;
+font-weight: 700;
+
+font-family: Roboto;
+font-weight: 400,500, 700 */
+
+a {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
-    }
-    ul{
-        list-style: none;
-    }
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --primary-text-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196F3;
+    --white-text-color: #FFFFFF;
+}
+
+/* ======= Студия css ======= */
+
+.header>.link {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: var(--accent-color);
+}
+
+.header .link span {
+    color: #000000;
+}
+
+.nav .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--title-color);
+}
+
+.nav .link.active:hover,:focus {
+    color: var(--accent-color);
+}
+
+.contacts .link{
+    color:var(--primary-text-color);
+}
+
+.contacts .link.active:hover,:focus {
+    color: var(--accent-color);
+}
