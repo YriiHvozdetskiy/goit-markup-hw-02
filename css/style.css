@@ -14,13 +14,8 @@ body {
     font-weight: 400;
     letter-spacing: 0.03em;
     line-height: 1.71;
+    color: var(--primary-text-color);
 }
-
-/* font-family: Raleway;
-font-weight: 700;
-
-font-family: Roboto;
-font-weight: 400,500, 700 */
 
 a {
     text-decoration: none;
@@ -32,6 +27,10 @@ ul {
     list-style: none;
 }
 
+button {
+    font-family: inherit;
+}
+
 :root {
     --primary-text-color: #757575;
     --title-color: #212121;
@@ -39,9 +38,9 @@ ul {
     --white-text-color: #FFFFFF;
 }
 
-/* ======= Студия css ======= */
+/* ======= header css ======= */
 
-.header>.link {
+.logo {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -50,7 +49,7 @@ ul {
     color: var(--accent-color);
 }
 
-.header .link span {
+.logo span {
     color: #000000;
 }
 
@@ -63,14 +62,133 @@ ul {
     color: var(--title-color);
 }
 
-.nav .link.active:hover,:focus {
+.nav .link.active:hover,
+.nav .link.active:focus {
     color: var(--accent-color);
 }
 
-.contacts .link{
-    color:var(--primary-text-color);
+.contacts .link {
+    color: var(--primary-text-color);
 }
 
-.contacts .link.active:hover,:focus {
+.contacts .link.active:hover,
+.contacts .link.active:focus {
     color: var(--accent-color);
+}
+
+/* ======= footer css ======= */
+
+.footer{
+    background: #2F303A;
+}
+
+.footer .logo{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: var(--accent-color);
+}
+
+.footer .logo span{
+    color:var(--white-text-color);
+}
+
+.footer .address{
+font-size: 14px;
+line-height: 1.71;
+
+color:var(--white-text-color);
+}
+
+.address .contact{
+font-size: 14px;
+line-height: 1.71;
+
+color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ======= Студія / hero css =======*/
+
+.hero {
+    background: #2F303A;
+}
+
+.hero .title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+}
+
+.hero .btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: var(--white-text-color);
+    background: var(--accent-color);
+    border: transparent;
+}
+
+/* ======= Студія / benefits css =======*/
+
+.benefits .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--title-color);
+}
+
+.benefits .text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* ======= Студія / work css =======*/
+
+.work .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-color);
+}
+
+/* ======= Студія / team css =======*/
+
+.team>.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-color);
+}
+
+.description .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center; */
+
+    color: var(--title-color);
+}
+
+.description .text {
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center; */
+
+    color: var(--primary-text-color);
 }
