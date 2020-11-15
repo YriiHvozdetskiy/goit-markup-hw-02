@@ -29,6 +29,7 @@ ul {
 
 button {
     font-family: inherit;
+    cursor: pointer;
 }
 
 :root {
@@ -78,11 +79,11 @@ button {
 
 /* ======= footer css ======= */
 
-.footer{
+.footer {
     background: #2F303A;
 }
 
-.footer .logo{
+.footer .logo {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -91,22 +92,22 @@ button {
     color: var(--accent-color);
 }
 
-.footer .logo span{
-    color:var(--white-text-color);
+.footer .logo span {
+    color: var(--white-text-color);
 }
 
-.footer .address{
-font-size: 14px;
-line-height: 1.71;
+.footer .address {
+    font-size: 14px;
+    line-height: 1.71;
 
-color:var(--white-text-color);
+    color: var(--white-text-color);
 }
 
-.address .contact{
-font-size: 14px;
-line-height: 1.71;
+.address .contact {
+    font-size: 14px;
+    line-height: 1.71;
 
-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -154,9 +155,9 @@ color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
 }
 
-/* ======= Студія / work css =======*/
+/* ======= Студія / works css =======*/
 
-.work .title {
+.works .title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -189,6 +190,44 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.19;
     /* text-align: center; */
+}
 
-    color: var(--primary-text-color);
+/*======= Портфолио / filter css =======*/
+
+.filter .btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* text-align: center; */
+
+    color: var(--title-color);
+    border: transparent;
+}
+
+.filter .btn:hover,
+.filter .btn:focus {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* text-align: center; */
+
+    color: var(--white-text-color);
+    background: var(--accent-color);
+}
+
+/*======= Портфолио / samples css =======*/
+
+.samples .title{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+
+color: var(--title-color);
+}
+
+.samples .text {
+font-size: 16px;
+line-height: 1.88;
 }
