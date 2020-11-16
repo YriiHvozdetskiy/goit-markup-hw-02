@@ -1,4 +1,14 @@
 /* ======= global css ======= */
+:root {
+    --primary-text-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196F3;
+    --white-text-color: #FFFFFF;
+    --bg-color-team: #F5F4FA;
+    --header-logo-span: #000000;
+    --hero-footer-bg-color: #2F303A;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -26,17 +36,10 @@ button {
     cursor: pointer;
 }
 
-:root {
-    --primary-text-color: #757575;
-    --title-color: #212121;
-    --accent-color: #2196F3;
-    --white-text-color: #FFFFFF;
-}
-
 /* ======= header css ======= */
 
 .logo {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -45,7 +48,7 @@ button {
 }
 
 .logo span {
-    color: #000000;
+    color: var(--header-logo-span);
 }
 
 .nav .link {
@@ -57,58 +60,33 @@ button {
     color: var(--title-color);
 }
 
-.nav .link.active:hover,
-.nav .link.active:focus {
+/* .link.active:hover,
+.link.active:focus {
     color: var(--accent-color);
-}
+} */
 
 .contacts .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
     color: var(--primary-text-color);
 }
 
-.contacts .link.active:hover,
-.contacts .link.active:focus {
+.link.active:hover,
+.link.active:focus {
     color: var(--accent-color);
 }
 
-/* ======= footer css ======= */
-
-.footer {
-    background: #2F303A;
-}
-
-.footer .logo {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
+.nav .link.active.current {
     color: var(--accent-color);
 }
-
-.footer .logo span {
-    color: var(--white-text-color);
-}
-
-.footer .address {
-    font-size: 14px;
-    line-height: 1.71;
-
-    color: var(--white-text-color);
-}
-
-.address .contact {
-    font-size: 14px;
-    line-height: 1.71;
-
-    color: rgba(255, 255, 255, 0.6);
-}
-
 
 /* ======= Студія / hero css =======*/
 
 .hero {
-    background: #2F303A;
+    background:var(--hero-footer-bg-color);
 }
 
 .hero .title {
@@ -162,6 +140,10 @@ button {
 
 /* ======= Студія / team css =======*/
 
+.team {
+    background-color: var(--bg-color-team);
+}
+
 .team>.title {
     font-weight: 700;
     font-size: 36px;
@@ -212,16 +194,53 @@ button {
 
 /*======= Портфолио / samples css =======*/
 
-.samples .title{
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+.samples .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 
-color: var(--title-color);
+    color: var(--title-color);
 }
 
 .samples .text {
-font-size: 16px;
-line-height: 1.88;
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--primary-text-color);
+}
+
+/* ======= footer css ======= */
+
+.footer {
+    background-color:var(--hero-footer-bg-color);
+}
+
+.footer .logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: var(--accent-color);
+}
+
+.footer .logo span {
+    color: var(--white-text-color);
+}
+
+.footer .address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--white-text-color);
+}
+
+.address .contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: rgba(255, 255, 255, 0.6);
 }
